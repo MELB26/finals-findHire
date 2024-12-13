@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font family */
+}
+
+body {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Updated gradient colors */
+    color: #333; /* Darker text color for better readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* More opaque for better readability */
+    border-radius: 15px; /* Increased border radius for a softer look */
+    padding: 25px 35px; /* Adjusted padding for comfort */
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.2rem; /* Slightly larger font size */
+    margin-bottom: 25px; /* Increased bottom margin */
+    color: #1b1010; /* White text for better contrast */
+}
+
+nav {
+    margin-bottom: 25px; /* Increased margin for better spacing */
+}
+
+nav a {
+    color: #ff6f61; /* Updated link color to match new scheme */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; 
+}
+
+nav a:hover {
+    color: #d9534f; /* Updated hover color for links */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap for better spacing */
+}
+
+label {
+    text-align: left;
+    font-size: 1rem; /* Increased font size for clarity */
+    font-weight: bold;
+    color: #555; /* Darker color for better contrast */
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    padding: 12px; /* Increased padding for comfort */
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.3); /* Updated background color */
+    color: #333; /* Darker text for better readability */
+    transition: background-color 0.3s ease-in-out; 
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    background-color: rgba(255, 255, 255, 0.5); /* Lighter on focus */
+}
+
+button {
+    background: linear-gradient(135deg, #ff6f61, #d9534f); /* Updated gradient colors */
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px; /* Increased padding for better clickability */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; 
+}
+
+button:hover {
+    background: linear-gradient(135deg, #d9534f, #ff6f61); /* Reversed gradient on hover */
+}
+
+ul.message-history {
+    list-style-type: none; /* Removed default list styling */
+    padding-left: 0; 
+}
+
+.message-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Maintained original style but more readable */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.reply-form {
+    margin-top: 10px;
+}
+
+.reply-form textarea {
+    width: 100%;
+    padding: 12px; /* Increased padding for comfort */
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #333; 
+}
+
+.reply-form textarea:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.reply-form button {
+    background: linear-gradient(135deg, #d9534f, #ff6f61); /* Consistent with button styles above */
+}
+
+.reply-form button:hover {
+   background : linear-gradient(135deg, #ff6f61, #d9534f); 
+}
+
+.no-messages {
+   color : #ff3333; 
+   font-size : 1rem; 
+   text-align : center; 
+}

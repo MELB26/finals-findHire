@@ -1,0 +1,132 @@
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font family */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light background for contrast */
+    color: #333; /* Darker text for readability */
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    color: #fff;
+    padding: 15px 20px; /* Increased padding for comfort */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Larger font size for emphasis */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0; /* Added margin for spacing */
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ff6f61; /* Updated link color to match new scheme */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover for better interaction feedback */
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto; /* Center main content */
+}
+
+main h2 {
+    color: #d9534f; /* Updated heading color to match new scheme */
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+main section {
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.9); /* More opaque background for sections */
+    padding: 15px;
+    border-radius: 8px; /* Softer rounded edges */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+}
+
+main section h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+main section ul {
+    list-style-type: none; /* Removed default list styling */
+    padding: 0; 
+}
+
+main section ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque background for list items */
+    border-radius: 5px;
+    border: 1px solid #ddd; /* Light border for definition */
+}
+
+form {
+    display: inline-block;
+    margin-top: 10px; /* Added top margin for spacing */
+}
+
+form textarea {
+    width: calc(100% - 10px);
+    margin-top: 10px;
+    padding: 12px; /* Increased padding for comfort */
+    border-radius: 5px; 
+    border: none; 
+    background-color: rgba(255,255,255,0.3); /* Updated background color */
+}
+
+form input[type="file"] {
+   margin-top : 10px; 
+}
+
+form button {
+   display : inline-block; 
+   background-color : #d9534f; /* Updated button color to match new scheme */ 
+   color : #fff; 
+   border : none; 
+   padding : 12px 20px; /* Increased padding for comfort */ 
+   border-radius : 5px; 
+   cursor : pointer; 
+   font-size : 1rem; 
+   margin-top : 10px; 
+   transition : background-color .3s ease-in-out; 
+}
+
+form button:hover {
+   background-color : #c94a3b; /* Darker shade on hover */ 
+}
+
+footer {
+   text-align : center; 
+   padding : 15px; /* Increased padding for comfort */ 
+   background-color : #333; 
+   color : #fff; 
+   position : relative; 
+   bottom : 0; 
+   width : 100%; 
+}
+
+footer p {
+   margin : 0; 
+   font-size : .9rem; 
+}

@@ -1,0 +1,115 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font family */
+}
+
+body {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Updated gradient colors */
+    color: #333; /* Darker text for better readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 16px;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    width: 90%; 
+    max-width: 600px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+}
+
+.navbar a {
+    color: #ff6f61; /* Updated link color to match new scheme */
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: color 0.3s; 
+}
+
+.navbar a:hover {
+    color: #d9534f; /* Updated hover color for links */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* More opaque for better readability */
+    border-radius: 15px; /* Softer rounded edges */
+    padding: 30px; 
+    width: 90%; 
+    max-width: 600px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
+    text-align: center; 
+    margin-top: 20px; /* Space between navbar and content */
+}
+
+.container h1 {
+    font-size: 2.2rem; /* Slightly larger font size for emphasis */
+    margin-bottom: 20px; 
+}
+
+.job-post {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly more opaque for contrast */
+    border-radius: 8px; /* Softer rounded edges */
+    padding: 15px; 
+    margin-bottom: 15px; 
+}
+
+.job-post h2 {
+    font-size: 1.5rem; 
+    color: #372424; 
+    margin-bottom: 10px; 
+}
+
+.job-post p {
+    font-size: 1rem; 
+    color: #1b1010; /* Light gray for better readability */
+}
+
+.apply-form {
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; /* Increased gap for better spacing */
+}
+
+textarea,
+input[type="file"] {
+   padding : 12px; /* Increased padding for comfort */ 
+   border : none; 
+   border-radius : 8px; /* Softer rounded edges */ 
+   outline : none; 
+   font-size : 1rem; 
+   background-color : rgba(255,255,255,0.3); /* More opacity */ 
+   color : #333; /* Darker text for better readability */ 
+   transition : background-color .3s ease-in-out;
+}
+
+textarea:focus,
+input[type="file"]:focus {
+   background-color : rgba(255,255,255,0.5); /* Lighter on focus */ 
+}
+
+button {
+   background : linear-gradient(135deg, #d9534f, #ff6f61); /* Updated gradient colors */ 
+   border : none;
+   color : #fff;
+   font-size : 1rem;
+   padding : 12px;
+   border-radius : 8px; /* Softer rounded edges */ 
+   cursor : pointer;
+   transition : background .3s ease-in-out;
+   display : block;
+   width : 100%; /* Makes the button full-width */ 
+}
+
+button:hover {
+   background : linear-gradient(135deg, #ff6f61, #d9534f); /* Reversed gradient on hover */ 
+}

@@ -1,0 +1,96 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 25px 35px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.login-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}
+
+.error-message {
+    background-color: rgba(255, 0, 0, 0.3);
+    color: #d9534f; /* Updated to match the new color scheme */
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1rem; /* Slightly larger for better readability */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap for better spacing */
+}
+
+label {
+    text-align: left;
+    font-size: 1rem; /* Increased font size for clarity */
+    font-weight: bold;
+    color: #555; /* Darker color for better contrast */
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 12px; /* Increased padding for comfort */
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #333; /* Darker text for better readability */
+    transition: background-color 0.3s ease-in-out; /* Focus effect transition */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+button {
+    background: linear-gradient(135deg, #ff6f61, #d9534f); /* Updated gradient colors */
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px; /* Increased padding for better clickability */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Transition for hover effect */
+}
+
+button:hover {
+    background: linear-gradient(135deg, #d9534f, #ff6f61); /* Reversed gradient on hover */
+}
+
+a {
+    color: #ff6f61; /* Updated link color to match new scheme */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; 
+}
+
+a:hover {
+    color: #d9534f; /* Updated hover color for links */
+}
